@@ -1,0 +1,37 @@
+// 
+// Theme Name: New Clean Template
+// _press.sass
+//
+// app/sass/layout/
+//
+
+.press
+    height: 600px
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/press__bg.jpg)
+    .container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__header
+        font-size: 80px
+        color: #fff
+        margin: 40px 0
+    &__content
+        padding: 80px 0
+        h2
+            font-size: 30px
+            margin: 0 0 40px 0
+        &-empty
+            color: var(--gray)
+
+@media (max-width: 768px)
+    .press
+        height: 400px
+        &__header
+            font-size: 30px
+        &__content
+            h2
+                text-align: center
+            &-empty
+                text-align: center

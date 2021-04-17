@@ -1,0 +1,28 @@
+// 
+// Theme Name: New Clean Template
+// _jobs.sass
+//
+// app/sass/layout/
+//
+
+.jobs
+    height: 600px
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/jobs__bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    .container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__header
+        font-size: 80px
+        color: #fff
+        margin: 40px 0
+
+@media (max-width: 768px)
+    .jobs
+        height: 440px
+        background-position: 50%
+        &__header
+            font-size: 30px

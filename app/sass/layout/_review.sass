@@ -1,0 +1,51 @@
+// 
+// Theme Name: New Clean Template
+// _review.sass
+//
+// app/sass/layout/
+//
+
+.review
+    &__item
+        background: var(--bg__gray)
+        border-radius: 10px
+        display: flex
+        padding: 1.5rem
+        position: relative
+    &__img
+        height: 130px
+        flex: 0 0 130px
+        margin: 0 20px 0 0
+    &__title
+        max-width: 320px
+        font-weight: 600
+        margin: 0 0 1rem 0
+    &__description
+        font-size: 0.875rem
+        margin: 0 0 1rem 0
+    &__team-img
+        width: 100%
+        height: 148px
+        margin: 0 0 2.25rem 0
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 10px
+    &__team-quote
+        font-size: 1.125rem
+        font-weight: 600
+        background: url(../img/icons/quote.svg) no-repeat
+        padding: 0 0 0 42px
+
+.stars
+    display: flex
+    position: absolute
+    top: 1.5rem
+    right: 1.5rem
+    &__item
+        width: 20px
+        height: 20px
+        background: url(../img/icons/star__full.svg) no-repeat 50%
+        background-size: contain
+        margin: 0 4px

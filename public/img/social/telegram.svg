@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="telegram" fill="#C62C38" fill-rule="nonzero">
+            <path d="M18.665,0.717 L0.93497,7.554 C-0.27503,8.04 -0.26803,8.715 0.71297,9.016 L5.26497,10.436 L15.797,3.791 C16.295,3.488 16.75,3.651 16.376,3.983 L7.84297,11.684 L7.84097,11.684 L7.84297,11.685 L7.52897,16.377 C7.98897,16.377 8.192,16.166 8.45,15.917 L10.661,13.767 L15.26,17.164 C16.108,17.631 16.717,17.391 16.928,16.379 L19.947,2.151 C20.256,0.912 19.474,0.351 18.665,0.717 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

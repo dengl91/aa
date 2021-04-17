@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAmerica</title>
+
+    <link rel="stylesheet" href="public/css/common.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="public/img/logo.png" alt="АвтоАмерика">
+                </div>
+                <div class="col-grow">
+                    <div class="row">
+                        <div class="header__search">
+                            <input type="text" name="s" placeholder="Поиск по марке, модели, описанию, #VIN #лота...">
+                            <input type="submit" value="">
+                        </div>
+                        <div class="phone">
+                            <div class="phone__title">Офис Киев</div>
+                            <a href="tel:0507530404" class="phone__number">(050) 753-04-04</a>
+                        </div>
+                        <div class="phone">
+                            <div class="phone__title">Офис Киев</div>
+                            <a href="tel:0507530404" class="phone__number">(050) 753-04-04</a>
+                        </div>
+                        <div class="social">
+                            <a href="" class="social__item instagram"></a>
+                            <a href="" class="social__item telegram"></a>
+                            <a href="" class="social__item youtube"></a>
+                            <a href="" class="social__item whatsapp"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <nav>
+                            <a href="">Аукцион</a>
+                            <a href="">Автомобили</a>
+                            <a href="">Авто в Украине</a>
+                            <a href="">Мото</a>
+                            <a href="">Водная техника</a>
+                            <a href="">Спецтехника</a>
+                            <a href="">Услуги</a>
+                            <a href="">Доставка</a>
+                            <a href="">Растаможка</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h1>Покупка и доставка авто из США<sup>🇺🇸</sup></h1>
+            <h3>Самый быстрый способ выбрать авто с аукционов <strong>Copart</strong>, <strong>IAAI</strong> и <strong>Manheim</strong><br> на русском языке</h3>
+            <div class="search">
+                <div class="search__title">Поиск авто на аукционах</div>
+                <div class="row">
+                    <div class="col-20">
+                        <div class="search__label">Марка</div>
+                        <select name="brand">
+                            <option selected disabled>Любая</option>
+                        </select>
+                    </div>
+                    <div class="col-20">
+                        <div class="search__label">Модель</div>
+                        <select name="model">
+                            <option selected disabled>Любая</option>
+                        </select>
+                    </div>
+                    <div class="col-20">
+                        <div class="search__label">Год выпуска</div>
+                        <div class="d-flex">
+                            <div class="search__range">
+                                <span>От</span>
+                                <input type="number" name="year_start" placeholder="1980">
+                            </div>
+                            <div class="search__range">
+                                <span>До</span>
+                                <input type="number" name="year_end" placeholder="2021">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-20">
+                        <div class="search__label">Цена<span>USD</span></div>
+                        <div class="d-flex">
+                            <div class="search__range">
+                                <span>От</span>
+                                <input type="number" name="year_start" placeholder="100">
+                            </div>
+                            <div class="search__range">
+                                <span>До</span>
+                                <input type="number" name="year_end" placeholder="132000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-20">
+                        <a href="/" class="search__link">Подобрать</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-grow">
+                        <div class="search__hint">
+                            Часто ищут:&nbsp;
+                            <a href="/">Kia Sportage</a>,
+                            <a href="/">Audi Q7</a>,
+                            <a href="/">BMW X6</a>,
+                            <a href="/">Mercedes GL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="auto">
+        <div class="container">
+            <div class="filter">
+                <div class="filter__content">
+                    <div class="filter__item active" data-toggle>Популярные</div>
+                    <div class="filter__item" data-toggle>От 7000$</div>
+                    <div class="filter__item" data-toggle>От 10 000$</div>
+                    <div class="filter__item" data-toggle>От 15 000$</div>
+                    <div class="filter__item" data-toggle>VIP сегмент</div>
+                </div>
+            </div>
+            <div class="row flex-wrap">
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="auto__item">
+                        <div class="auto__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__title">Lexus RX 350 2018</div>
+                            <div class="auto__price">$46 700</div>
+                        </div>
+                        <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                        <div class="auto__hint">
+                            <a href="/">Найти аналоги на аукционе</a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="auto__btn">Купить</div>
+                            <a href="/" class="auto__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-35">
+                    <form class="form">
+                        <div class="form__title">Свяжитесь с нами,<br> чтобы обсудить решение напрямую с нашим экспертом.</div>
+                        <div class="form__subtitle">Или запросите бесплатный обратный звонок. В течение 15 минут с вами свяжется менеджер.</div>
+                        <input type="text" name="phone" placeholder="Телефон*">
+                        <input type="text" name="username" placeholder="Имя*">
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+                <div class="col-65">
+                    <div class="featured__title">Популярные марки</div>
+                    <div class="row">
+                        <div class="col-25">
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">Alfa Romeo</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                        </div>
+                        <div class="col-25">
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">Alfa Romeo</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                        </div>
+                        <div class="col-25">
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">Alfa Romeo</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                        </div>
+                        <div class="col-25">
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">Alfa Romeo</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                            <a href="" class="featured__brand">Audi</a>
+                            <a href="" class="featured__brand">BMW</a>
+                            <a href="" class="featured__brand">Cadillac</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <a href="/" class="blocklink" target="_blank">
+                                <div class="blocklink__title">Калькулятор растаможки</div>
+                                <div class="blocklink__description">Быстрый расчет таможенных платежей при ввозе и растаможке транспортных средств</div>
+                            </a>
+                        </div>
+                        <div class="col-50">
+                            <a href="/" class="blocklink" target="_blank">
+                                <div class="blocklink__title">Калькулятор доставки</div>
+                                <div class="blocklink__description">Быстрый расчет таможенных платежей при ввозе и растаможке транспортных средств</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-20">
+                    <a href="/" class="category__item">
+                        <div class="category__img">
+                            <img src="public/img/icons/moto.svg" alt="Мото">
+                        </div>
+                        <div class="category__title">Мото</div>
+                    </a>
+                </div>
+                <div class="col-20">
+                    <a href="/" class="category__item">
+                        <div class="category__img">
+                            <img src="public/img/icons/boat.svg" alt="Мото">
+                        </div>
+                        <div class="category__title">Водная техника</div>
+                    </a>
+                </div>
+                <div class="col-20">
+                    <a href="/" class="category__item">
+                        <div class="category__img">
+                            <img src="public/img/icons/excavator.svg" alt="Мото">
+                        </div>
+                        <div class="category__title">Спецтехника</div>
+                    </a>
+                </div>
+                <div class="col-20">
+                    <a href="/" class="category__item">
+                        <div class="category__img">
+                            <img src="public/img/icons/car.svg" alt="Мото">
+                        </div>
+                        <div class="category__title">Автомобили</div>
+                    </a>
+                </div>
+                <div class="col-20">
+                    <a href="/" class="category__item">
+                        <div class="category__img">
+                            <img src="public/img/icons/electrocar.svg" alt="Мото">
+                        </div>
+                        <div class="category__title">Электромобили</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Почему выбирают услуги AutoAmerica?</h2>
+            <div class="features__content">
+                <div class="features__row">
+                    <div class="features__item"></div>
+                    <div class="features__item">Предложения AutoAmerica</div>
+                    <div class="features__item">Предложения  на рынке</div>
+                </div>
+                <div class="features__row">
+                    <div class="features__item"><strong>Неограниченное</strong> количество проверок авто по базам CarFax, собственным источникам</div>
+                    <div class="features__item">Бесплатно</div>
+                    <div class="features__item">35$</div>
+                </div>
+                <div class="features__row">
+                    <div class="features__item"><strong>Неограниченное</strong> количество проверок авто по базам CarFax, собственным источникам</div>
+                    <div class="features__item">Бесплатно</div>
+                    <div class="features__item">35$</div>
+                </div>
+                <div class="features__row">
+                    <div class="features__item"><strong>Неограниченное</strong> количество проверок авто по базам CarFax, собственным источникам</div>
+                    <div class="features__item">Бесплатно</div>
+                    <div class="features__item">35$</div>
+                </div>
+                <div class="features__row">
+                    <div class="features__item"><strong>Неограниченное</strong> количество проверок авто по базам CarFax, собственным источникам</div>
+                    <div class="features__item">Бесплатно</div>
+                    <div class="features__item">35$</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="row">
+                <div class="col-40">
+                    <div class="review__team-img">
+                        <img src="public/img/team__img.png" alt="Наша команда">
+                    </div>
+                    <div class="review__team-quote">Довольные клиенты – наша гордость! Мы работаем ради полного удовлетворения всех требований и ожиданий наших клиентов по доставке б/у авто из Америки на 100%.</div>
+                </div>
+                <div class="col-60">
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="public/img/review__img.png" alt="INFINITI G252012 INFINITI G25 2012">
+                        </div>
+                        <div class="review__info">
+                            <div class="review__title">Александр, INFINITI G252012 INFINITI G25 2012 </div>
+                            <div class="review__description">
+                                2012 INFINITI G25, цена указана как на аукционе, дополнительно оплачивается доставка и растаможка (калькулятор растаможки ниже на странице). Автомобиль находится на площадке CA - BAKERSFIELD в США, для расчёта стоимости доставки, выберите – Город Отправки из США, выберите порт прибытия, и введите тип транспортного средства. Доставка 7-8 недель.<br><br>
+
+                                Авто проверено через систему CarFax. Запросите выписку CarFax и убедитесь что у авто реальный пробег, и авто не был утоплен. Полное документальное сопровождение сделки. Только официальный экспорт б/у авто из США, от первого поставщика. Автомобиль после ДТП.<br><br>
+
+                                Так же есть возможность заказать акты дефектовочных работ в США перед покупкой. Дополнительно предоставляем возможность страхования груза, экспедирование и услугу растаможки авто в Украине. О том как это работает смотрите видео.
+                            </div>
+                            <div class="stars">
+                                <div class="stars__item"></div>
+                                <div class="stars__item"></div>
+                                <div class="stars__item"></div>
+                                <div class="stars__item"></div>
+                                <div class="stars__item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyus">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <h2>Почему авто из США?</h2>
+                </div>
+                <div class="col-75">
+                    <div class="whyus__title">Выгодно и безопасно</div>
+                    <div class="whyus__description">Главное преимущество — это экономия. Стоимость американского авто с учетом всех расходов будет на 30-40% ниже стоимости аналогичной б/у машины в Украине в худшем состоянии и с большим пробегом.Американские страховые аукционы дают возможность увидеть реальную картину по истории автомобиля.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyus whyus--simple">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <h2>Наши преимущества</h2>
+                </div>
+                <div class="col-75">
+                    <div class="whyus__description"><strong>“AutoAmerica”</strong> - это широчайший ассортимент авто из США под ключ, самая выгодная доставка авто из Америки в Украину и гарантия качественной услуги! Не упускайте возможность купить авто из США и Канады максимально выгодно!</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title" data-content="1">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title" data-content="2">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title" data-content="3">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="whyus__item">
+                        <div class="whyus__item-title" data-content="4">Лучшая цена</div>
+                        <div class="whyus__item-description">Лучшая цена на б/у машины в США. Американские авто обойдутся на 20-40% дешевле, чем в Украине, Европе и Азии.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-60">
+                    <h2>Покупка авто из США</h2>
+                    <p>Украинцы предпочитают покупать автомобили из США, поскольку они обладают лучшими характеристиками, дизайном и высоким качеством сборки. Однако не у всех есть возможность покупать новое авто.</p>
+                    <p>Купить авто в Европе можно дешевле, чем в Украине, но цены на автомобили из США еще ниже, поэтому есть смысл приобретать транспорт именно там. После принятия нового закона относительно растаможки машин, покупка авто из США стала еще доступнее. Но многие украинцы еще не сильно осведомлены в том, как покупать автомашины из Америки.</p>
+                </div>
+            </div>
+            <h3>Почему автомобили из США так популярны в Украине</h3>
+            <p>Американский рынок б/у автомобилей считается самым крупным в мире. Кроме заманчивых цен, автолюбителей также привлекает большой выбор авто. Также следует учитывать, что по соотношению цена/качество авто из США не имеют себе равных. Почему же машины из Америки столь популярны:</p>
+            <ul>
+                <li>Авто, купленные за границей, отличаются уровнем сборки. Это обусловлено тем, что каждая компания старается предоставить своим клиентам лучший товар;</li>
+                <li>Состояние поддержанных автомобилей. Американцы часто меняют свои авто, после каждых 5-7 лет использования. Это способствует тому, что основное количество б/у машин, которые продаются, находятся в хорошем состоянии;</li>
+                <li>Стоимость считается основным достоинством авто из США, поскольку купить машину в Америке можно дешевле, даже с учетом доставки и растаможки авто.вое авто.</li>
+            </ul>
+            <h3>Как доставляются автомашины из Америки</h3>
+            <p>Самым распространенным способом приобретения транспорта из-за океана считается посещение склада автомобилей, формально – аукциона. Они размещены по всей Америке, и туда свозят машины, которые побывали в ДТП, или по каким-либо причинам были конфискованы у владельцев.</p>
+            <p>На аукционах присутствуют машины разных марок и в различном состоянии. Некоторые экземпляры повреждены достаточно сильно, а на других же всего несколько царапин, которые можно легко убрать на ближайшем СТО.</p>
+            <p>Чтобы заказать автомобиль, прежде всего необходимо определиться с маркой и моделью. Затем на аукционе оплачиваются все сборы и оформляются документы, после чего авто направляется в ближайший порт, где погружается в специальный контейнер и на пароме отправляется в Одессу. Стоимость перевозки зависит от растояния и типа кузова автомобиля, поэтому транспортировка кроссовера обойдется дороже.</p>
+            <h3>Куда обратиться, чтобы доставить авто из США в Украину</h3>
+            <p>Самым распространенным способом приобретения транспорта из-за океана считается посещение склада автомобилей, формально – аукциона. Они размещены по всей Америке, и туда свозят машины, которые побывали в ДТП, или по каким-либо причинам были конфискованы у владельцев.</p>
+            <p>На аукционах присутствуют машины разных марок и в различном состоянии. Некоторые экземпляры повреждены достаточно сильно, а на других же всего несколько царапин, которые можно легко убрать на ближайшем СТО.</p>
+            <p>Чтобы заказать автомобиль, прежде всего необходимо определиться с маркой и моделью. Затем на аукционе оплачиваются все сборы и оформляются документы, после чего авто направляется в ближайший порт, где погружается в специальный контейнер и на пароме отправляется в Одессу. Стоимость перевозки зависит от растояния и типа кузова автомобиля, поэтому транспортировка кроссовера обойдется дороже.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <div class="footer__title">Офис Киев</div>
+                    <div class="footer__subtitle">Ежедневно с 9:00 - 20: 00</div>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <div class="footer__subtitle">Адрес:<br> г. Киев, ул. Ямская, 35</div>
+                </div>
+                <div class="col-25">
+                    <div class="footer__title">Офис Одесса</div>
+                    <div class="footer__subtitle">Ежедневно с 9:00 - 20: 00</div>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <div class="footer__subtitle">Адрес:<br> г. Одесса, ул. Ямская, 35</div>
+                </div>
+                <div class="col-25">
+                    <div class="footer__title">Помощь и сервисы</div>
+                    <a href="/" class="footer__link">О компании</a>
+                    <a href="/" class="footer__link">Услуги</a>
+                    <a href="/" class="footer__link">Акции</a>
+                    <a href="/" class="footer__link">Оптовым диллерам</a>
+                    <a href="/" class="footer__link">Вакансии</a>
+                    <a href="/" class="footer__link">Проверка авто по VIN</a>
+                </div>
+                <div class="col-25">
+                    <div class="footer__title">Категории</div>
+                    <a href="/" class="footer__link">Спецтеника</a>
+                    <a href="/" class="footer__link">Услуги</a>
+                    <a href="/" class="footer__link">Акции</a>
+                    <a href="/" class="footer__link">Оптовым диллерам</a>
+                    <a href="/" class="footer__link">Вакансии</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    © Copyright 2021 AutoAmerica All rights reserved.
+                </div>
+                <div class="col-25">
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+                <div class="col-25">
+                    <a href="">Соглашение об использовании</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="public/js/main.js"></script>
+
+</body>
+</html>

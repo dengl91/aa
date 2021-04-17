@@ -1,0 +1,27 @@
+// 
+// Theme Name: New Clean Template
+// _filter.sass
+//
+// app/sass/layout/
+//
+
+.filter
+    display: flex
+    margin: 0 0 2.5rem 0
+    &__content
+        line-height: var(--select)
+        border: 1px solid var(--stroke)
+        border-radius: 4px
+        display: flex
+    &__item
+        border-right: 1px solid var(--stroke)
+        padding: 0 1.25rem
+        cursor: pointer
+        &:first-child
+            border-radius: 4px 0 0 4px
+        &:last-child
+            border-radius: 0 4px 4px 0
+        &.active
+            color: var(--main)
+            background: var(--blue__light)
+            box-shadow: 0 0 0 1px var(--main)

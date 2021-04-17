@@ -1,0 +1,48 @@
+// 
+// Theme Name: New Clean Template
+// _whyus.sass
+//
+// app/sass/layout/
+//
+
+.whyus
+    background: var(--bg__gray)
+    padding: 4rem 0
+    h2
+        text-align: left
+        margin-top: 0
+    &__title
+        font-weight: 600
+        margin: 0 0 1.5rem 0
+    &__description
+        margin: 0 0 3rem 0
+    &__item
+        background: #fff
+        border: 1px solid var(--stroke)
+        border-radius: 10px
+        padding: 1.5rem
+    &__item-title
+        font-weight: 600
+        line-height: 1.5rem
+        background: url(../img/icons/ok.svg) no-repeat
+        padding: 0 0 0 42px
+        margin: 0 0 1rem 0
+        [class*=simple] &
+            background: none
+            position: relative
+            &::after
+                content: attr(data-content)
+                width: 1.5rem
+                height: 1.5rem
+                color: #fff
+                text-align: center
+                background: var(--main)
+                border-radius: 50%
+                position: absolute
+                left: 0
+    &__item-description
+        font-size: 0.875rem
+    &--simple
+        background: #fff
+        padding: 3rem 0
+        margin: 0
