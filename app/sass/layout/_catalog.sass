@@ -10,7 +10,6 @@
     .container
         position: relative
     h2
-        text-align: left
         border-bottom: 1px solid var(--stroke)
         padding: 0 0 1.5rem 0
         margin: 0 0 1.5rem 0
@@ -38,6 +37,17 @@
     &__infocol
         flex: 1 1 0
         padding: 0 0 0 2rem
+    &__state
+        font-size: 0.875rem
+        color: var(--gray)
+        &::after
+            content: ''
+            width: 10px
+            height: 10px
+            background: var(--green)
+            border-radius: 50%
+            margin: 0 0.5rem
+            display: inline-block
     &__auction
         color: var(--gray)
         padding: 0 0 0 2rem

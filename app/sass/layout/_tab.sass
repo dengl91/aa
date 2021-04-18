@@ -1,0 +1,28 @@
+// 
+// Theme Name: New Clean Template
+// _tab.sass
+//
+// app/sass/layout/
+//
+
+.tab-nav
+    border-bottom: 1px solid var(--stroke)
+    display: flex
+    margin: 2rem 0
+    &__item
+        font-size: 1.125rem
+        color: var(--gray)
+        border-bottom: 4px solid #ffffff00
+        padding: 15px
+        margin: 0 2rem 0 0
+        cursor: pointer
+        &.active
+            color: var(--text)
+            border-bottom: 3px solid var(--main)
+        sup
+            position: absolute
+    &__content
+        margin: 0 0 1rem 0
+        display: none
+        &.active
+            display: block

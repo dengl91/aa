@@ -16,6 +16,25 @@
             $('.' + sibling).toggleClass('active');
         });
 
+        // slick
+
+        $('.single-car__gallery').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            infinite: false,
+            asNavFor: '.single-car__nav'
+        });
+
+        $('.single-car__nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            infinite: false,
+            asNavFor: '.single-car__gallery',
+            focusOnSelect: true
+        });
+
         // Lazy and counters
         $(window).scroll( function() {
             $('[data-count]').each(function () {
@@ -74,6 +93,15 @@
             (bottom > viewport_top && bottom <= viewport_bottom) ||
             (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
         }
+
+        // Tabs
+
+        $('.tab-nav__item').on('click', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+            let index = $(this).index();
+            $(this).closest('section').find('.tab-nav__content').removeClass('active');
+            $(this).closest('section').find('.tab-nav__content').eq(index).addClass('active');
+        });
 
         // checkbox
 

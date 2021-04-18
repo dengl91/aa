@@ -34,7 +34,7 @@
     --blue__blend: #548cde80
     --brown: #CAAC0E
     --orange: #F4C82D
-    --green: #AFD55E
+    --green: #58CF6D
     --placeholder: #BEC2C7
     --input: 3.75rem
     --select: 2.875rem
@@ -156,7 +156,7 @@ section
     background: var(--violet__light)
 
 [class*=item]
-    &:last-child:not(:first-child)
+    &:last-child:not(:first-child):not(.active)
         border-right: none
         border-bottom: none
 [class*=__img]
@@ -212,6 +212,17 @@ nav
                 top: -10px
                 right: -20px
 
+select
+    width: 100%
+    font-size: 0.875rem
+    color: var(--gray)
+    line-height: var(--select)
+    background: url(../img/icons/arrow__down.svg) no-repeat right 1rem top 50% #fff
+    border: 1px solid var(--stroke)
+    border-radius: 4px
+    padding: 0 1rem
+    -webkit-appearance: none
+
 .social
     display: flex
     align-items: center
@@ -237,7 +248,6 @@ nav
 h2
     font-size: 1.5rem
     font-weight: 600
-    text-align: center
     margin: 1rem 0 3rem 0
     display: block
 h3
@@ -350,6 +360,22 @@ ul
         font-size: 0.9rem
         font-weight: 600
 
+.sidebar
+    position: sticky
+    top: 20px
+    &__title
+        font-size: 1.125rem
+        font-weight: 600
+        margin: 0 0 1.5rem 0
+    &__item
+        font-weight: 600
+        border-bottom: 1px solid var(--stroke)
+        padding: 0 0 1rem 0
+        margin: 0 0 1rem 0
+        display: block
+        &:hover
+            text-decoration: underline
+
 .map
     margin: 0
     #map-wrap
@@ -422,6 +448,10 @@ ul
     padding: 2rem 0
     margin: 0
 
+.slick-slide
+    &:focus
+        outline: none
+
 @media screen and (max-width: 768px)
     body
         font-size: 14px
@@ -470,4 +500,11 @@ ul
 @import layout/whyus
 @import layout/intro
 @import layout/catalog
+@import layout/single-car
+@import layout/tab
+@import layout/calculator
+@import layout/news
+@import layout/service
+@import layout/consult
+@import layout/youtube
 
