@@ -1,4 +1,4 @@
-// custom script
+// main script
 
 (function($) {
     $(document).ready(function() {
@@ -7,9 +7,13 @@
             $(this).toggleClass('active').siblings().removeClass('active');
         });
 
+        $('[data-active]').on('click', function() {
+            $(this).toggleClass('active');
+        });
+
         $('[data-control]').on('click', function() {
             let sibling = $(this).data('control');
-            $(sibling).toggleClass('active');
+            $('.' + sibling).toggleClass('active');
         });
 
         // Lazy and counters
@@ -70,6 +74,16 @@
             (bottom > viewport_top && bottom <= viewport_bottom) ||
             (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
         }
+
+        // checkbox
+
+        $('.checkbox').on('click', function() {
+            if ( $(this).find('input').is(':checked') ) {
+                $(this).find('input').attr('checked', false);
+            } else {
+                $(this).find('input').attr('checked', true);
+            }
+        });
 
     });
 })( jQuery );

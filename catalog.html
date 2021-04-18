@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAmerica</title>
+
+    <link rel="stylesheet" href="public/css/common.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="public/img/logo.png" alt="АвтоАмерика">
+                </div>
+                <div class="col-grow">
+                    <div class="row">
+                        <div class="header__search">
+                            <input type="text" name="s" placeholder="Поиск по марке, модели, описанию, #VIN #лота...">
+                            <input type="submit" value="">
+                        </div>
+                        <div class="phone">
+                            <div class="phone__title">Офис Киев</div>
+                            <a href="tel:0507530404" class="phone__number">(050) 753-04-04</a>
+                        </div>
+                        <div class="phone">
+                            <div class="phone__title">Офис Киев</div>
+                            <a href="tel:0507530404" class="phone__number">(050) 753-04-04</a>
+                        </div>
+                        <div class="social">
+                            <a href="" class="social__item instagram"></a>
+                            <a href="" class="social__item telegram"></a>
+                            <a href="" class="social__item youtube"></a>
+                            <a href="" class="social__item whatsapp"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <nav>
+                            <a href="/catalog.html">Аукцион</a>
+                            <a href="">Автомобили</a>
+                            <a href="">Авто в Украине</a>
+                            <a href="">Мото</a>
+                            <a href="">Водная техника</a>
+                            <a href="">Спецтехника</a>
+                            <a href="">Услуги</a>
+                            <a href="">Доставка</a>
+                            <a href="">Растаможка</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner banner--page">
+        <div class="container">
+            <h1>Каталог авто на аукционах из США</h1>
+            <h3>Самый быстрый способ выбрать авто с аукционов <strong>Copart</strong>, <strong>IAAI</strong> и <strong>Manheim</strong><br> на русском языке</h3>
+        </div>
+    </section>
+
+    <div class="bc">
+        <div class="container d-flex">
+            <a href="/" class="bc__item">Главная</a>
+            &nbsp;•&nbsp;
+            <span class="bc__item">Аукцион</span>
+        </div>
+    </div>
+
+    <section class="catalog">
+        <div class="container">
+            <h2>Автомобили</h2>
+            <select name="sort" class="catalog__sort">
+                <option value="date">Последние</option>
+                <option value="date">Сначала дешевые</option>
+                <option value="date">Сначала дорогие</option>
+            </select>
+            <div class="row">
+                <div class="col search__col">
+                    <div class="search">
+                        <div class="search__header">Фильтр</div>
+                        <div class="search__label">Цена<span>USD</span></div>
+                        <div class="search__wrapper">
+                            <div class="d-flex">
+                                <div class="search__range">
+                                    <span>От</span>
+                                    <input type="number" name="year_start" placeholder="100">
+                                </div>
+                                <div class="search__range">
+                                    <span>До</span>
+                                    <input type="number" name="year_end" placeholder="132000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Марка</div>
+                            <input type="text" class="search__search" placeholder="Найти марку">
+                            <div class="checkbox__wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Audi</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">BMW</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Cadillac</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Mercedes</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Audi</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">BMW</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Cadillac</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Mercedes</div>
+                                </div>
+                            </div>
+                            <div class="checkbox__collapser" data-active data-control="checkbox__wrapper">Смотреть все</div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Модель</div>
+                            <select name="model">
+                                <option selected disabled>Любая</option>
+                                <option value="A4">A4</option>
+                            </select>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Год выпуска</div>
+                            <div class="d-flex">
+                                <div class="search__range">
+                                    <span>От</span>
+                                    <input type="number" name="year_start" placeholder="1980">
+                                </div>
+                                <div class="search__range">
+                                    <span>До</span>
+                                    <input type="number" name="year_end" placeholder="2021">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Тип кузова</div>
+                            <select name="model">
+                                <option selected disabled>Любой</option>
+                                <option value="sedan">Седан</option>
+                                <option value="hatchback">Хэтчбэк</option>
+                            </select>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Коробка передач</div>
+                            <div class="checkbox__wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Автоматическая</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Механическая</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Вариатор</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Двигатель</div>
+                            <div class="checkbox__wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Бензин</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Дизель</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Электро</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Объем двигателя<span>СМ3</sup></span></div>
+                            <div class="d-flex">
+                                <div class="search__range">
+                                    <span>От</span>
+                                    <input type="number" name="year_start" placeholder="0.4">
+                                </div>
+                                <div class="search__range">
+                                    <span>До</span>
+                                    <input type="number" name="year_end" placeholder="8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Привод</div>
+                            <div class="checkbox__wrapper">
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Передний</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Задний</div>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <div class="checkbox__label">Полный</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__wrapper">
+                            <div class="search__label">Состояние</div>
+                            <select name="model">
+                                <option selected disabled>Не важно</option>
+                                <option value="sedan">Без повреждений</option>
+                                <option value="hatchback">Аварийное</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-grow">
+                    <div class="catalog__item">
+                        <div class="catalog__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                            <div class="catalog__auction">Copart</div>
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="catalog__time">
+                                Начало:&nbsp;<span>14.04.2021 17:00</span>
+                            </div>
+                            <div class="auto__price">$46 700</div>
+                            <div class="catalog__link">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                            <div class="catalog__auction">Copart</div>
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="catalog__time">
+                                Начало:&nbsp;<span>14.04.2021 17:00</span>
+                            </div>
+                            <div class="auto__price">$46 700</div>
+                            <div class="catalog__link">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                            <div class="catalog__auction">Copart</div>
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="catalog__time">
+                                Начало:&nbsp;<span>14.04.2021 17:00</span>
+                            </div>
+                            <div class="auto__price">$46 700</div>
+                            <div class="catalog__link">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                            <div class="catalog__auction">Copart</div>
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="catalog__time">
+                                Начало:&nbsp;<span>14.04.2021 17:00</span>
+                            </div>
+                            <div class="auto__price">$46 700</div>
+                            <div class="catalog__link">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                            <div class="catalog__auction">Copart</div>
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="catalog__time">
+                                Начало:&nbsp;<span>14.04.2021 17:00</span>
+                            </div>
+                            <div class="auto__price">$46 700</div>
+                            <div class="catalog__link">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__img">
+                            <img src="public/img/auto__img.png" alt="Lexus RX 350 2017">
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="auto__title">Lexus RX 350 2017 рестайлинг 8LX-S</div>
+                            <div class="auto__description">97 294 mls, 2.5 л./бензин, автомат, полный привод, 2010 г.</div>
+                            <div class="catalog__auction">Copart</div>
+                        </div>
+                        <div class="catalog__infocol">
+                            <div class="catalog__time">
+                                Начало:&nbsp;<span>14.04.2021 17:00</span>
+                            </div>
+                            <div class="auto__price">$46 700</div>
+                            <div class="catalog__link">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <div class="footer__title">Офис Киев</div>
+                    <div class="footer__subtitle">Ежедневно с 9:00 - 20: 00</div>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <div class="footer__subtitle">Адрес:<br> г. Киев, ул. Ямская, 35</div>
+                    <div class="footer__subtitle footer__subtitle--social">Напишите нам:</div>
+                    <div class="footer__social telegram">
+                        <img src="public/img/social/telegram.svg" alt="Telegram">
+                    </div>
+                    <div class="footer__social whatsapp">
+                        <img src="public/img/social/whatsapp.svg" alt="Whatsapp">
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="footer__title">Офис Одесса</div>
+                    <div class="footer__subtitle">Ежедневно с 9:00 - 20: 00</div>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <a href="tel:0507530404" class="footer__link">(050) 753-04-04</a>
+                    <div class="footer__subtitle">Адрес:<br> г. Одесса, ул. Ямская, 35</div>
+                    <div class="footer__subtitle footer__subtitle--social">Напишите нам:</div>
+                    <div class="footer__social telegram">
+                        <img src="public/img/social/telegram.svg" alt="Telegram">
+                    </div>
+                    <div class="footer__social whatsapp">
+                        <img src="public/img/social/whatsapp.svg" alt="Whatsapp">
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="footer__title">Помощь и сервисы</div>
+                    <a href="/" class="footer__link">О компании</a>
+                    <a href="/" class="footer__link">Услуги</a>
+                    <a href="/" class="footer__link">Акции</a>
+                    <a href="/" class="footer__link">Оптовым диллерам</a>
+                    <a href="/" class="footer__link">Вакансии</a>
+                    <a href="/" class="footer__link">Проверка авто по VIN</a>
+                </div>
+                <div class="col-25">
+                    <div class="footer__title">Категории</div>
+                    <a href="/" class="footer__link">Спецтеника</a>
+                    <a href="/" class="footer__link">Услуги</a>
+                    <a href="/" class="footer__link">Акции</a>
+                    <a href="/" class="footer__link">Оптовым диллерам</a>
+                    <a href="/" class="footer__link">Вакансии</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-50">
+                    <div class="footer__title">Каталог</div>
+                    <div class="row">
+                        <div class="col-50">
+                            <a href="/" class="footer__link">Audi</a>
+                            <a href="/" class="footer__link">BMW</a>
+                            <a href="/" class="footer__link">Cadillac</a>
+                            <a href="/" class="footer__link">Audi</a>
+                            <a href="/" class="footer__link">BMW</a>
+                            <a href="/" class="footer__link">Cadillac</a>
+                        </div>
+                        <div class="col-50">
+                            <a href="/" class="footer__link">Audi</a>
+                            <a href="/" class="footer__link">BMW</a>
+                            <a href="/" class="footer__link">Cadillac</a>
+                            <a href="/" class="footer__link">Audi</a>
+                            <a href="/" class="footer__link">BMW</a>
+                            <a href="/" class="footer__link">Cadillac</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="footer__title">Новости</div>
+                    <div class="row">
+                        <div class="col-50">
+                            <div class="footer__news">Б\у Авто из США в Украине: Покупка, Доставка, Растаможка автомобилей с Аукционов Америки.</div>
+                            <div class="footer__news">Б\у Авто из США в Украине: Покупка, Доставка, Растаможка автомобилей с Аукционов Америки.</div>
+                            <div class="footer__news">Б\у Авто из США в Украине: Покупка, Доставка, Растаможка автомобилей с Аукционов Америки.</div>
+                        </div>
+                        <div class="col-50">
+                            <div class="footer__news">Б\у Авто из США в Украине: Покупка, Доставка, Растаможка автомобилей с Аукционов Америки.</div>
+                            <div class="footer__news">Б\у Авто из США в Украине: Покупка, Доставка, Растаможка автомобилей с Аукционов Америки.</div>
+                            <div class="footer__news">Б\у Авто из США в Украине: Покупка, Доставка, Растаможка автомобилей с Аукционов Америки.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    © Copyright 2021 AutoAmerica All rights reserved.
+                </div>
+                <div class="col-25">
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+                <div class="col-25">
+                    <a href="">Соглашение об использовании</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="public/js/main.js"></script>
+
+</body>
+</html>

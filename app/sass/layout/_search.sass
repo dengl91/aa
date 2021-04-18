@@ -6,14 +6,26 @@
 //
 
 .search
+    &__header
+        color: var(--gray)
+        line-height: 1.5rem
+        text-transform: uppercase
+        background: url(../img/icons/filter.svg) no-repeat 0 50%
+        background-size: 1.25rem
+        padding: 0 0 0 2rem
+        margin: 0 0 1rem 0
     &__title
         font-size: 1.25rem
         font-weight: 600
         margin: 0 0 1rem 0
     .row
         margin: 0 -10px
+    &__col
+        flex: 0 0 330px
     [class^=col]
         padding: 0 10px
+    &__wrapper
+        margin: 0 0 1rem 0
     select
         width: 100%
         font-size: 0.875rem
@@ -80,3 +92,49 @@
         margin: 1rem 0
         a
             border-bottom: 1px dashed var(--gray)
+    &__search
+        width: 100%
+        line-height: var(--search)
+        background: url(../img/icons/search.svg) no-repeat top 50% right 1rem
+        border: 1px solid var(--stroke)
+        border-radius: 4px
+        padding: 0 1rem
+        margin: 0 0 0.5rem 0
+        -webkit-appearance: none
+        &:focus
+            border: 1px solid var(--main)
+
+.checkbox
+    display: flex
+    padding: 0.5rem 0
+    cursor: pointer
+    &__wrapper
+        max-height: 9rem
+        overflow: hidden
+        transition: 0.3s
+        &.active
+            max-height: 18rem
+    input
+        width: 20px
+        height: 20px
+        border: 1px solid var(--stroke)
+        border-radius: 4px
+        padding: 0
+        margin: 0
+        -webkit-appearance: none
+        &:checked
+            background: url(../img/icons/check.svg) no-repeat 50% var(--main)
+            background-size: 12px
+            border: 1px solid var(--main)
+    &__label
+        font-size: 1rem
+        padding: 0 0 0 0.5rem
+    &__collapser
+        font-size: 0.875rem
+        color: var(--gray)
+        background: url(../img/icons/arrow__down--alt.svg) no-repeat top 50% right 0.875rem
+        padding: 0 1rem 0 0
+        margin: 0.5rem 0 1.5rem 0
+        cursor: pointer
+        &.active
+            background: url(../img/icons/arrow__up--alt.svg) no-repeat top 50% right 0.875rem
