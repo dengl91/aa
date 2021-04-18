@@ -128,3 +128,12 @@
         cursor: pointer
         &.active
             background: url(../img/icons/arrow__up--alt.svg) no-repeat top 50% right 0.875rem
+
+@media (max-width: 768px)
+    .search
+        &__col
+            max-height: 48px
+            flex: 0 0 100%
+            overflow: hidden
+        [class^=col]
+            padding: 10px
