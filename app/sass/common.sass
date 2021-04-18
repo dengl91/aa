@@ -448,9 +448,40 @@ ul
     padding: 2rem 0
     margin: 0
 
-.slick-slide
-    &:focus
-        outline: none
+.slick
+    &-slider
+        position: relative
+    &-slide
+        &:focus
+            outline: none
+    &-next
+        width: 2rem
+        height: 2rem
+        font-size: 0
+        background: url(../img/icons/arrow__right.svg) no-repeat 50% #fff
+        border: none
+        border-radius: 50%
+        position: absolute
+        top: 50%
+        right: 0.5rem
+        z-index: 1
+        transform: translateY(-50%)
+        -webkit-appearance: none
+    &-prev
+        width: 2rem
+        height: 2rem
+        font-size: 0
+        background: url(../img/icons/arrow__left.svg) no-repeat 50% #fff
+        border: none
+        border-radius: 50%
+        position: absolute
+        top: 50%
+        left: 0.5rem
+        z-index: 1
+        transform: translateY(-50%)
+        -webkit-appearance: none
+    &-disabled
+        opacity: 0.5
 
 @media screen and (max-width: 768px)
     body

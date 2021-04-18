@@ -21,7 +21,7 @@
         $('.single-car__gallery').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             infinite: false,
             asNavFor: '.single-car__nav'
         });
